@@ -64,18 +64,18 @@ a:hover {
 }
 
 .profile-img {
-    width: 200px;
-    height: 200px;
+    width: 100%;        /* Takes full width of parent */
+    max-width: 200px;   /* But no larger than 200px */
+    height: auto;       /* Maintain aspect ratio */
+    aspect-ratio: 1/1;  /* Force square */
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 1.5rem;
     transition: transform 0.3s ease;
 }
 
 .profile-img:hover {
     transform: scale(1.05);
 }
-
 /* Content sections */
 .section {
     margin-bottom: 2rem;
