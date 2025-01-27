@@ -1,0 +1,113 @@
+/* Import Lato font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* Base styles */
+body {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    color: #111;
+    background-color: #ffffff;
+}
+
+/* Links */
+a {
+    color: #1772d0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #f09228;
+}
+
+/* Typography */
+h2 {
+    margin: 2rem 0 1rem;
+    font-weight: 700;
+    font-size: 22px;
+    color: #333;
+}
+
+.name {
+    padding-top: 20px;
+    margin: 0;
+    font-size: 32px;
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+/* Profile section */
+.profile {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+/* Content sections */
+.section {
+    margin-bottom: 2rem;
+}
+
+/* Publications */
+.publication {
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    border-left: 3px solid #f0f0f0;
+}
+
+.publication:hover {
+    border-left-color: #1772d0;
+}
+
+.publication-title {
+    font-weight: 700;
+    color: #333;
+}
+
+.publication-authors {
+    font-style: italic;
+    color: #666;
+}
+
+.publication-venue {
+    color: #888;
+}
+
+/* Links section */
+.links {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.links a {
+    margin: 0 0.5rem;
+    padding: 0.3rem 0;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    body {
+        padding: 1rem;
+    }
+    
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+}
