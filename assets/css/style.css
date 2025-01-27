@@ -52,13 +52,25 @@ h2 {
 }
 
 .profile-img {
-    width: 160px;
-    height: 160px;
+    width: 200px;    /* Increased from 160px */
+    height: 200px;   /* Increased from 160px */
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;  /* Added smooth transition for hover effect */
 }
 
+.profile-img:hover {
+    transform: scale(1.05);  /* Optional: adds a subtle zoom effect on hover */
+}
+
+/* For mobile screens */
+@media (max-width: 600px) {
+    .profile-img {
+        width: 180px;    /* Increased from 120px */
+        height: 180px;   /* Increased from 120px */
+    }
+}
 /* Content sections */
 .section {
     margin-bottom: 2rem;
