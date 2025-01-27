@@ -64,15 +64,21 @@ a:hover {
 }
 
 .profile-img {
-    width: 100%;        /* Takes full width of parent */
-    max-width: 200px;   /* But no larger than 200px */
-    height: auto;       /* Maintain aspect ratio */
-    aspect-ratio: 1/1;  /* Force square */
+    width: 100%;        
+    max-width: 250px;   /* Increased from 200px to 250px */
+    height: auto;       
+    aspect-ratio: 1/1;  
     border-radius: 50%;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
 
+/* Also update the mobile version */
+@media (max-width: 600px) {
+    .profile-img {
+        max-width: 200px;    /* Increased from 180px to 200px */
+    }
+}
 .profile-img:hover {
     transform: scale(1.05);
 }
@@ -125,4 +131,12 @@ a:hover {
         width: 180px;
         height: 180px;
     }
+}
+
+.credits {
+    text-align: center;
+    font-size: small;
+    color: #666;
+    margin-top: 3rem;
+    padding-bottom: 2rem;
 }
