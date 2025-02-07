@@ -65,12 +65,12 @@ a:hover {
 
 .profile-img {
     width: 100%;        
-    max-width: 250px;   /* Increased from 200px to 250px */
+    max-width: 250px;   
     height: auto;       
     aspect-ratio: 1/1;  
     border-radius: 50%;
     object-fit: cover;
-    transition: transform 0.3s ease;
+    /* removed the transition property */
 }
 
 /* Also update the mobile version */
@@ -79,9 +79,7 @@ a:hover {
         max-width: 200px;    /* Increased from 180px to 200px */
     }
 }
-.profile-img:hover {
-    transform: scale(1.05);
-}
+
 /* Content sections */
 .section {
     margin-bottom: 2rem;
@@ -139,4 +137,48 @@ a:hover {
     color: #666;
     margin-top: 3rem;
     padding-bottom: 2rem;
+}
+
+/* Styling for experience logos */
+/* Logo container */
+.logo-container {
+    min-width: 120px;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin-right: 16px;
+    padding: 8px;
+    border: 1px solid #f0f0f0; /* Optional: adds subtle border */
+}
+
+/* Experience logo image */
+.experience-img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 600px) {
+    .logo-container {
+        min-width: 80px;
+        width: 80px;
+        height: 80px;
+        margin-right: 12px;
+        padding: 6px;
+    }
+    
+    td[style*="display: flex"] {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .logo-container {
+        margin-bottom: 12px;
+    }
 }
